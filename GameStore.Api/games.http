@@ -1,0 +1,31 @@
+GET http://localhost:5235/games
+
+###
+
+GET http://localhost:5235/games/1
+
+###
+POST http://localhost:5235/games
+Content-Type: application/json
+
+{
+    "name": "Final Fantasyyy",
+    "genreId": 5,
+    "price": 19.99,
+    "releaseDate": "2011-11-18"
+}
+
+###
+PUT http://localhost:5235/games/3
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "Street Fighter II Turbo changed frm Minecraft",
+    "genreId": 3,
+    "price": 2.99,
+    "releaseDate": "1992-07-15"
+  }
+
+###
+DELETE http://localhost:5235/games/2
